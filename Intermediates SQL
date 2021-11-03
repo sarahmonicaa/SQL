@@ -1,0 +1,18 @@
+# Write a select query that will return : 
+.Last name
+.email
+.departmentname
+.and empoyees who have salaries greater that 120,000.
+
+
+Solution : 
+ select 
+ e.last_name,
+ e.mail,
+ d.department_name
+ 
+ from data_sci.empoyees e
+ join data_sci.company_departments d
+ on e.department_id = d.id
+ where salary >120000
+
