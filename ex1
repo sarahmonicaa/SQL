@@ -1,0 +1,11 @@
+# write a query that's going to return the number of employees in a department, but I only want to see the departments where the total salary paid in that
+ department is greater than 5 million.
+ Also, when you return the results, the results should be ordered from the highest to the lowest total salary.
+ 
+ #Solution  
+ 
+ SELECT departement_id, sum(salary)
+ from data_sci.employees
+ groupe by departement_id
+ having sum(salaty) >50000000
+ order by sum (salary) desc 
